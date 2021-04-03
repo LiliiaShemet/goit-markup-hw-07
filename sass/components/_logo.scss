@@ -1,0 +1,22 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+  
+  }
+  .footer-bg.letter{
+    margin-bottom: 20px;
+    /* outline: 1px solid orange; */
+  }
+  .logo-dark {
+    color: var(--white-color);
+  }
+  .logo-light {
+    color: var(--mostly-black-color);
+  }
+  
+  .letter {
+    color: var(--accent-color);
+  }

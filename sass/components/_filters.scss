@@ -1,0 +1,11 @@
+.filters.list {
+    display: flex;
+    justify-content: center;
+    padding-top: 47px;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  
+  .filters.list .list-item:not(:last-child) {
+    margin-right: 8px;
+  }

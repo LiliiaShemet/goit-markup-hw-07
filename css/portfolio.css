@@ -140,8 +140,7 @@ ul, ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -171,14 +170,13 @@ ul, ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link svg {
-  padding: 0;
-}
-
-.nav-contact-link:hover,
-.nav-contact-link:focus {
+.nav-contact-link:hover, .nav-contact-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.header-contacts-link svg {
+  padding: 0;
 }
 
 .active-link {
@@ -234,7 +232,6 @@ ul, ol {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   color: var(--white-color);
   text-align: center;
   letter-spacing: 0.06em;
@@ -262,10 +259,14 @@ ul, ol {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--secondary-button-bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-btn .primary:hover,
+.modal-btn .primary:focus {
+  background-color: var(--secondary-button-bgc);
 }
 
 .primary {
@@ -278,19 +279,14 @@ ul, ol {
   letter-spacing: 0.06em;
 }
 
-.modal-btn .primary:hover,
-.modal-btn .primary:focus {
-  background-color: var(--secondary-button-bgc);
+.filters {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filters .nav-link .modal-btn {
   background-color: var(--accent-color);
   color: var(--white-color);
-}
-
-.filters {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .filter-btn {
@@ -306,8 +302,7 @@ ul, ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
@@ -338,19 +333,23 @@ ul, ol {
   color: var(--transparent-white-color);
 }
 
-.card-project-link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-project-link:hover,
-.card-project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.item-third .name-card {
+  text-align: left;
+  padding: 20px 24px;
 }
 
 .card-wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.card-project-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-project-link:hover, .card-project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cards-overlay {
@@ -372,11 +371,7 @@ ul, ol {
 .card-project-link:hover .cards-overlay,
 .card-project-link:focus .cards-overlay {
   transform: translateY(0);
-}
-
-.item-third .name-card {
-  text-align: left;
-  padding: 20px 24px;
+  opacity: 1;
 }
 
 .footer-address-link {
@@ -403,6 +398,17 @@ ul, ol {
   padding-top: 0px;
   display: flex;
   align-items: baseline;
+}
+
+.footer-bg h2 {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-color);
 }
 
 .footer-nav {
@@ -432,25 +438,13 @@ ul, ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.come-on .list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.come-on .icon-link:hover,
-.come-on .icon-link:focus {
+.come-on .icon-link:hover, .come-on .icon-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-bg h2 {
-  margin-bottom: 20px;
-  font-family: Roboto;
-  font-weight: 700;
-  letter-spacing: var(--letter-spacing);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--white-color);
+.come-on .list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* subscription-form */
@@ -459,17 +453,6 @@ ul, ol {
   flex-direction: row;
   align-items: center;
   margin-right: auto;
-}
-
-.subscription-title {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: var(--letter-spacing);
-  text-transform: uppercase;
-  color: var(--white-color);
 }
 
 .sign-up-email {
@@ -491,11 +474,22 @@ ul, ol {
   color: rgba(255, 255, 255, 0.6);
 }
 
-input.sign-up-email[placeholder] {
+input .sign-up-email[placeholder] {
   color: #fff;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: var(--letter-spacing);
+}
+
+.subscription-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .sign-up-btn {

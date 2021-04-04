@@ -140,8 +140,7 @@ ul, ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -171,14 +170,13 @@ ul, ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link svg {
-  padding: 0;
-}
-
-.nav-contact-link:hover,
-.nav-contact-link:focus {
+.nav-contact-link:hover, .nav-contact-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.header-contacts-link svg {
+  padding: 0;
 }
 
 .active-link {
@@ -234,7 +232,6 @@ ul, ol {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   color: var(--white-color);
   text-align: center;
   letter-spacing: 0.06em;
@@ -262,10 +259,14 @@ ul, ol {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--secondary-button-bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-btn .primary:hover,
+.modal-btn .primary:focus {
+  background-color: var(--secondary-button-bgc);
 }
 
 .primary {
@@ -278,19 +279,14 @@ ul, ol {
   letter-spacing: 0.06em;
 }
 
-.modal-btn .primary:hover,
-.modal-btn .primary:focus {
-  background-color: var(--secondary-button-bgc);
+.filters {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filters .nav-link .modal-btn {
   background-color: var(--accent-color);
   color: var(--white-color);
-}
-
-.filters {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .feature {
@@ -299,38 +295,35 @@ ul, ol {
   color: var(--dark-gray-color);
 }
 
-.about-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.about {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
-.about-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  /* identical to box height */
-  margin-bottom: 10px;
+.about-title {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
   text-align: center;
+  letter-spacing: var(--letter-spacing);
 }
 
 .about-item {
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   font-weight: 400;
   color: var(--dark-gray-color);
   text-align: center;
   margin-bottom: 16px;
 }
 
-.about {
-  padding-bottom: 94px;
-}
-
-.about .card-set .item-third {
-  position: relative;
+.about-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .about-text {
@@ -352,6 +345,10 @@ ul, ol {
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+.about .card-set .item-third {
+  position: relative;
 }
 
 .features {
@@ -414,20 +411,7 @@ ul, ol {
   margin-bottom: 30px;
 }
 
-.about {
-  padding-top: 94px;
-}
-
-.about-title {
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: var(--letter-spacing);
-}
-
-.filters.list {
+.filters .list {
   display: flex;
   justify-content: center;
   padding-top: 47px;
@@ -435,7 +419,7 @@ ul, ol {
   padding: 0;
 }
 
-.filters.list .list-item:not(:last-child) {
+.filters .list .list-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -472,6 +456,12 @@ ul, ol {
   letter-spacing: var(--letter-spacing);
 }
 
+.name-card .list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
 .name-card .icon-link {
   width: 44px;
   height: 44px;
@@ -480,23 +470,15 @@ ul, ol {
   /*fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-.name-card .list {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.name-card .icon-link:hover,
-.name-card .icon-link:focus {
-  background-color: var(--accent-color);
-}
-
 .name-card .icon-link svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name-card .icon-link:hover svg,
-.name-card .icon-link:focus svg {
+.name-card .icon-link:hover, .name-card .icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.name-card .icon-link:hover svg, .name-card .icon-link:focus svg {
   fill: var(--white-color);
 }
 
@@ -514,13 +496,11 @@ ul, ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-item .icon-link:hover,
-.client-item .icon-link:focus {
+.client-item .icon-link:hover, .client-item .icon-link:focus {
   fill: var(--accent-color);
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-item:hover, .client-item:focus {
   border-color: var(--accent-color);
 }
 
@@ -555,6 +535,17 @@ ul, ol {
   align-items: baseline;
 }
 
+.footer-bg h2 {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-color);
+}
+
 .footer-nav {
   padding-left: 0px;
   font-style: normal;
@@ -582,25 +573,13 @@ ul, ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.come-on .list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.come-on .icon-link:hover,
-.come-on .icon-link:focus {
+.come-on .icon-link:hover, .come-on .icon-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-bg h2 {
-  margin-bottom: 20px;
-  font-family: Roboto;
-  font-weight: 700;
-  letter-spacing: var(--letter-spacing);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--white-color);
+.come-on .list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* subscription-form */
@@ -609,17 +588,6 @@ ul, ol {
   flex-direction: row;
   align-items: center;
   margin-right: auto;
-}
-
-.subscription-title {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: var(--letter-spacing);
-  text-transform: uppercase;
-  color: var(--white-color);
 }
 
 .sign-up-email {
@@ -641,11 +609,22 @@ ul, ol {
   color: rgba(255, 255, 255, 0.6);
 }
 
-input.sign-up-email[placeholder] {
+input .sign-up-email[placeholder] {
   color: #fff;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: var(--letter-spacing);
+}
+
+.subscription-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .sign-up-btn {
@@ -709,6 +688,14 @@ input.sign-up-email[placeholder] {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
 .form-title {
   display: block;
   margin-bottom: 12px;
@@ -716,14 +703,6 @@ input.sign-up-email[placeholder] {
   line-height: 1.15;
   text-align: center;
   letter-spacing: var(--letter-spacing);
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
 }
 
 .wrapper-user-field {
@@ -746,10 +725,6 @@ input.sign-up-email[placeholder] {
   border-color: var(--accent-color);
 }
 
-.input-field:focus + .form-icon {
-  fill: var(--accent-color);
-}
-
 .form-icon {
   position: absolute;
   display: block;
@@ -760,6 +735,10 @@ input.sign-up-email[placeholder] {
   height: 18px;
   fill: var(--mostly-black-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:focus + .form-icon {
+  fill: var(--accent-color);
 }
 
 .label-text {
@@ -800,6 +779,18 @@ input.sign-up-email[placeholder] {
 }
 
 /* checkbox */
+.modal-form-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: var(--letter-spacing);
+  border-color: var(--dark-gray-color);
+  justify-content: center;
+  color: var(--dark-gray-color);
+  font-weight: normal;
+}
+
 .modal-form-checkbox::before {
   content: "";
   display: block;
@@ -816,6 +807,10 @@ input.sign-up-email[placeholder] {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-chekbox-square:focus + .modal-form-checkbox::before {
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
 .form-chekbox-square:checked + .modal-form-checkbox::before {
   background-image: url(../images/checkbox/vector.svg);
   background-repeat: no-repeat;
@@ -825,22 +820,6 @@ input.sign-up-email[placeholder] {
   background-position: center;
   transform: scale(1.2);
   outline: none;
-}
-
-.form-chekbox-square:focus + .modal-form-checkbox::before {
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
-
-.modal-form-checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: var(--letter-spacing);
-  border-color: var(--dark-gray-color);
-  justify-content: center;
-  color: var(--dark-gray-color);
-  font-weight: normal;
 }
 
 /*  */
@@ -867,8 +846,7 @@ input.sign-up-email[placeholder] {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:hover, .submit-btn:focus {
   background-color: var(--secondary-button-bgc);
 }
 
@@ -907,16 +885,16 @@ input.sign-up-email[placeholder] {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .backdrop-modal {
-  transform: translate(-50%, -50%) rotate(0) scaleX(0);
-  opacity: 0;
-}
-
-.backdrop.is-hidden {
+.backdrop .is-hidden {
   opacity: 0;
   /* visibility: hidden; */
   pointer-events: none;
   transform: scale(0.9);
+}
+
+.backdrop .is-hidden .backdrop-modal {
+  transform: translate(-50%, -50%) rotate(0) scaleX(0);
+  opacity: 0;
 }
 
 .modal-close-btn {
@@ -935,8 +913,7 @@ input.sign-up-email[placeholder] {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:focus,
-.modal-close-btn:hover {
+.modal-close-btn:focus, .modal-close-btn:hover {
   color: var(--accent-color);
   border-color: 1px solid var(--accent-color);
   fill: var(--accent-color);

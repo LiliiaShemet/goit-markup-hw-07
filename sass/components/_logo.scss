@@ -4,17 +4,19 @@
     font-size: 26px;
     line-height: 1.19;
     /* identical to box height */
+
+    &_light {
+      color: var(--mostly-black-color);
+    }
+
+    &_dark {
+      color: var(--white-color);
+    }
   
   }
   .footer-bg.letter{
     margin-bottom: 20px;
     /* outline: 1px solid orange; */
-  }
-  .logo-dark {
-    color: var(--white-color);
-  }
-  .logo-light {
-    color: var(--mostly-black-color);
   }
   
   .letter {

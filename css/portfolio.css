@@ -333,26 +333,26 @@ ul, ol {
   color: var(--transparent-white-color);
 }
 
-.item-third .name-card {
+.card-project .name-card {
   text-align: left;
   padding: 20px 24px;
 }
 
-.card-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.card-project-link {
+.card-project__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-project-link:hover, .card-project-link:focus {
+.card-project__link:hover, .card-project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards-overlay {
+.card-project__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-project__overlay {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -368,8 +368,8 @@ ul, ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-project-link:hover .cards-overlay,
-.card-project-link:focus .cards-overlay {
+.card-project__link:hover .card-project__overlay,
+.card-project__link:focus .card-project__overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -465,6 +465,10 @@ ul, ol {
   padding-left: 16px;
   padding-bottom: 15px;
   cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: var(--letter-spacing);
 }
 
 .sign-up__email::placeholder {
@@ -472,13 +476,6 @@ ul, ol {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-input .sign-up__email[placeholder] {
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: var(--letter-spacing);
 }
 
 .sign-up__btn {
